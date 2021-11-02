@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel = "icon" href = 
+<link rel = "icon" href = 
 "U.png" 
         type = "image/x-icon">
     <!-- Required meta tags -->
@@ -29,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/uCode/">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  " href="https://utkrishta24.github.io/uCode/about.html">About</a>
+                        <a class="nav-link " href="about.html">About</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -41,22 +41,30 @@
                             Topics
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Cheatsheets</a></li>
                             <li><a class="dropdown-item" href="#">Web Developement</a></li>
+                            <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+                            <li><a class="dropdown-item" href="#">Internet Of things</a></li>
+                            <li><a class="dropdown-item" href="#">Graphic Designing & Animations</a></li>
+                            <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+                            <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
+                            <li><a class="dropdown-item" href="#">Report Bug</a></li>
                             <li><a class="dropdown-item" href="#">Support</a></li>
-                            <li><a class="dropdown-item" href="#">Write For Us</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="https://utkrishta24.github.io/uCode/contact.html">Contact Us</a>
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="">Blogs</a>
                     </li>
 
-
                 </ul>
+                
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -64,62 +72,61 @@
             </div>
         </div>
     </nav>
+    <div>
 
-    <div class="container my-4">
-        <h2>Contact Us</h2>
-        <form>
-            <div class="form-group mb-3">
-                <label for="exampleFormControlInput1" class="mb-3">Email Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group mb-3">
-                <label for="exampleFormControlSelect1" class="mb-3">Select your Query</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Web</option>
-                    <option>Tech Stack</option>
-                    <option>Technology</option>
-                    <option>Others</option>
-                </select>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-sm-2">Are you a Member?</div>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">
-                            Yes
-                        </label>
+        <div class="container my-4">
+               <h2> Contact Us</h2>
+               <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1"
+                             placeholder="name@example.com">
+               </div>
+               <div>
+               
+               <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                       Are you a member?
+                      </label>
                     </div>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-sm-2">Are you a Coder?</div>
-                <div class="col-sm-10">
+               
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck2">
-                        <label class="form-check-label" for="gridCheck2">
-                            Yes
-                        </label>
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                       Are you a Proffessor?
+                      </label>
                     </div>
-                </div>
-            </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Are you a Coder?
+                      </label>
+                    </div>
+                    
+               <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Select Your Query</label>
+                      <select class="form-select" aria-label="Default select example">
+                             <option selected>None</option>
+                             <option value="1">Web</option>
+                             <option value="2">Tech Stack</option>
+                             <option value="3">Technology</option>
+                      </select>
+               </div>
+
+               <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Elaborate Your Concerns</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+               </div>
+               <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Tell Us About Yourself</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+               </div>
+               <div class="btn btn-primary">Submit</div>
+        
 
 
-            <div class="form-group mb-3">
-                <label for="exampleFormControlTextarea2" class="form-label">Tell us about Yourself</label>
-                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-            </div>
+        </div>
 
-
-
-            <div class="form-group mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Elaborate your Concern</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button class="btn btn-primary mb-3">Submit</button>
-        </form>
-    </div>
 
     <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
