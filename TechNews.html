@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://utkrishta24.github.io/uCode/">u&iCode</a>
+            <a class="navbar-brand" href="index.html">u&iCode</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://utkrishta24.github.io/uCode/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  active" href="https://utkrishta24.github.io/uCode/about.html">About</a>
+                        <a class="nav-link  " href="about.html">About</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -56,47 +56,102 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://utkrishta24.github.io/uCode/contact.html">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                     <a class="nav-link  active" href="">Blogs</a>
-                 </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link " href="">Blogs</a>
+                    </li>
                 </ul>
-               
+                
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <div>
-                    <button class="btn btn-danger mx-2" data-toggle="modal" data-target="#loginModal">Login</button>
-                    <button class="btn btn-danger mx-2" data-toggle="modal" data-target="#loginModal">Sign Up</button>
-                  
-                    </div>
+                <div class="mx-2">
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+                </div>
              </div>
       </div>
 </nav>
 
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Login to uCode</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-       <span aria-hidden="true">&times;</span>
-     </button>
-   </div>
-   <div class="modal-body">
-     ...
-   </div>
-   <div class="modal-footer">
-     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-     <button type="button" class="btn btn-primary">Save changes</button>
-   </div>
- </div>
-</div>
-</div>s
+    <!-- Sign up modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an uCode Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="mb-3">
+                            <div class="form-group mb-3">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div style="height: 630px; width: 100%;">
         <iframe
