@@ -2,175 +2,394 @@
 <html lang="en">
 
 <head>
-<link rel = "icon" href = 
-"U.png" 
-        type = "image/x-icon">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="uCode Blog" content="A tech blog from uCode Inc.">
+       <link rel="icon" href="U.png" type="image/x-icon">
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="uCode Blog" content="A tech blog from uCode Inc.">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+              crossorigin="anonymous">
 
-    <title>u&iCode - Nirvana for Coders</title>
+       <title>u&iCode - Nirvana for Coders</title>
+       <style>
+              .card {
+                     margin: 20px;
+              }
+       </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">u&iCode</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  " href="about.html">About</a>
-                    </li>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="index.html">u&iCode</a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="nav-link  " href="about.html">About</a>
+                                   </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Topics
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Web Developement</a></li>
-                            <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
-                            <li><a class="dropdown-item" href="#">Internet Of things</a></li>
-                            <li><a class="dropdown-item" href="#">Graphic Designing & Animations</a></li>
-                            <li><a class="dropdown-item" href="#">Programming Languages</a></li>
-                            <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
-                            <li><a class="dropdown-item" href="#">Augmented Reality</a></li>
-                            <li><a class="dropdown-item" href="#">Virtual Reality</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Report Bug</a></li>
-                            <li><a class="dropdown-item" href="#">Support</a></li>
-                        </ul>
-                    </li>
+                                   <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                 data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Topics
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                 <li><a class="dropdown-item" href="#">Web Developement</a></li>
+                                                 <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+                                                 <li><a class="dropdown-item" href="#">Internet Of things</a></li>
+                                                 <li><a class="dropdown-item" href="#">Graphic Designing &
+                                                               Animations</a></li>
+                                                 <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+                                                 <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
+                                                 <li><a class="dropdown-item" href="#">Augmented Reality</a></li>
+                                                 <li><a class="dropdown-item" href="#">Virtual Reality</a></li>
+                                                 <li>
+                                                        <hr class="dropdown-divider">
+                                                 </li>
+                                                 <li><a class="dropdown-item" href="#">Report Bug</a></li>
+                                                 <li><a class="dropdown-item" href="#">Support</a></li>
+                                          </ul>
+                                   </li>
 
-                    
 
-                    <li class="nav-item">
-                        <a class="nav-link " href="blogmain.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="cheatsheet.html">Cheatsheet</a></li>
-                                <li><a class="dropdown-item" href="must.html">Must Do Problems</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Ask The Expert</a></li>
+                                   <li class="nav-item">
+                                          <a class="nav-link " href="blogmain.html">Blogs</a>
+                                   </li>
+                                   <li class="nav-item">
+
+                                   <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                 data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Resources
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                 <li><a class="dropdown-item" href="cheatsheet.html">Cheatsheet</a></li>
+                                                 <li><a class="dropdown-item" href="must.html">Must Do Problems</a></li>
+                                                 <li>
+                                                        <hr class="dropdown-divider">
+                                                 </li>
+                                                 <li><a class="dropdown-item" href="#">Ask The Expert</a></li>
+                                          </ul>
+                                   </li>
+
+
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="nav-link" href="contact.html">Contact Us</a>
+                                   </li>
                             </ul>
-                        </li>
 
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
 
-                
-                
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <div class="mx-2">
-                    <button class="btn btn-outline-danger" data-bs-toggle="modal"
-                        data-bs-target="#loginModal">Login</button>
-                    <button class="btn btn-outline-danger" data-bs-toggle="modal"
-                        data-bs-target="#signupModal">Signup</button>
-                </div>
-             </div>
-      </div>
-</nav>
 
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Login to uCode</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sign up modal -->
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Get an uCode Account</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-
-                        <div class="mb-3">
-                            <div class="form-group mb-3">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name">
+                            <form class="d-flex">
+                                   <input class="form-control me-2" type="search" placeholder="Search"
+                                          aria-label="Search">
+                                   <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                            <div class="mx-2">
+                                   <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                                          data-bs-target="#loginModal">Login</button>
+                                   <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                                          data-bs-target="#signupModal">Signup</button>
                             </div>
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="cexampleInputPassword1">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Create Account</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+                     </div>
+              </div>
+       </nav>
+
+       <!-- Login Modal -->
+       <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                     <div class="modal-content">
+                            <div class="modal-header">
+                                   <h5 class="modal-title" id="signupModalLabel">Login to uCode</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                   <form>
+                                          <div class="mb-3">
+                                                 <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                 <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                 <div id="emailHelp" class="form-text">We'll never share your email with
+                                                        anyone else.</div>
+                                          </div>
+                                          <div class="mb-3">
+                                                 <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                 <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                          <div class="mb-3 form-check">
+                                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                 <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Login</button>
+                                   </form>
+                            </div>
+                            <div class="modal-footer">
+                                   <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+       <!-- Sign up modal -->
+       <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                     <div class="modal-content">
+                            <div class="modal-header">
+                                   <h5 class="modal-title" id="signupModalLabel">Get an uCode Account</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                   <form>
+
+                                          <div class="mb-3">
+                                                 <div class="form-group mb-3">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" class="form-control" id="name">
+                                                 </div>
+                                                 <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                 <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                 <div id="emailHelp" class="form-text">We'll never share your email with
+                                                        anyone else.</div>
+                                          </div>
+                                          <div class="mb-3">
+                                                 <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                 <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                          <div class="mb-3">
+                                                 <label for="cexampleInputPassword1" class="form-label">Confirm
+                                                        Password</label>
+                                                 <input type="password" class="form-control"
+                                                        id="cexampleInputPassword1">
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Create Account</button>
+                                   </form>
+                            </div>
+                            <div class="modal-footer">
+                                   <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       <div>
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                   class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                   aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                   aria-label="Slide 3"></button>
+                     </div>
+                     <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                   <img src="https://source.unsplash.com/collection/190727/1600x200">
+                                   <div class="carousel-caption d-none d-md-block">
+                                          <h5>Learn New Technology</h5>
+                                          <p>Web Developement + Ar/Vr + Machine Learning</p>
+                                   </div>
+                            </div>
+                            <div class="carousel-item">
+                                   <img src="https://source.unsplash.com/collection/190727/1600x200">
+                                   <div class="carousel-caption d-none d-md-block">
+                                          <h5>Learn New Programming Language</h5>
+                                          <p>C + c++ + Python + Java</p>
+                                   </div>
+                            </div>
+                            <div class="carousel-item">
+                                   <img src="https://source.unsplash.com/collection/190727/1600x200">
+                                   <div class="carousel-caption d-none d-md-block">
+                                          <h5>Explore Competitive Programming</h5>
+                                          <p>Learn STL + Omptimized Programming</p>
+                                   </div>
+                            </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                     </button>
+              </div>
+              <div>
+                     <div class="card-group">
+                            <div class="card">
+                                   <img src="About2.jpg" class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title"> Frontend Web Development</h5>
+                                          <p class="card-text">Complete Frontent web development course .Includes HTML
+                                                 ,CSS, Javascript</p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.2700s</s></em> &nbsp<b> Rs.
+                                                        1200</b></small>
+                                   </div>
+                            </div>
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Backened Web Development</h5>
+                                          <p class="card-text">This is a complete Backened Web Developement course with
+                                                 new technologies </p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.3700s</s></em> &nbsp<b> Rs.
+                                                        1500</b></small>
+                                   </div>
+                            </div>
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Machine Learning</h5>
+                                          <p class="card-text">This is a complete Machine Learning Course.
+                                                 No pre-knowledge of Python is required.
+                                          </p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.5400s</s></em> &nbsp<b> Rs.
+                                                        2500</b></small>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="card-group">
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Augmented Reality</h5>
+                                          <p class="card-text">Learn augmented Reality with Unity-3D from scratch to
+                                                 advance</p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.5400s</s></em> &nbsp<b> Rs.
+                                                        2500</b></small>
+                                   </div>
+                            </div>
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Virtual Reality</h5>
+                                          <p class="card-text">Learn Virtual Reality with Unity-3D from scratch to
+                                                 advance</p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.5000s</s></em> &nbsp<b> Rs.
+                                                        2400</b></small>
+                                   </div>
+                            </div>
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">C Programming</h5>
+                                          <p class="card-text">Complete C Programming Course from basics to Advance.
+                                                 Includes C Data Structure Course
+                                          </p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.5000s</s></em> &nbsp<b> Rs.
+                                                        2400</b></small>
+
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="card-group">
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">C++ Pragramming</h5>
+                                          <p class="card-text">This is a complete C Plus Plus course from basics to
+                                                 advanced. This includes OOPS, Data Structure & Algorithms</p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.4000s</s></em> &nbsp<b> Rs.
+                                                        2500</b></small>
+
+                                   </div>
+                            </div>
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Java</h5>
+                                          <p class="card-text">This is a complete Java course from basics to advanced.
+                                                 This includes OOPS, Data Structure & Algorithms</p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.4000s</s></em> &nbsp<b> Rs.
+                                                        2500</b></small>
+                                   </div>
+                            </div>
+                            <div class="card">
+                                   <img src="..." class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Python</h5>
+                                          <p class="card-text">This is a complete Python course from basics to advanced.
+                                                 This includes OOPS, Data Structure & Algorithms</p>
+                                   </div>
+                                   <div class="card-footer">
+                                          <small class="text-muted"><em><s>Rs.4000s</s></em> &nbsp<b> Rs.
+                                                        2500</b></small>
+                                   </div>
+                            </div>
+                     </div>
+                     
+              </div>
+       </div>
+       <div class="card-group">
+              <div class="card">
+                     <img src="..." class="card-img-top" alt="...">
+                     <div class="card-body">
+                            <h5 class="card-title"> Internet Of Things</h5>
+                            <p class="card-text">Complete Course -Internet of Things</p>
+                     </div>
+                     <div class="card-footer">
+                            <small class="text-muted"><em><s>Rs.2700s</s></em> &nbsp<b> Rs.
+                                          1200</b></small>
+                     </div>
+              </div>
+              <div class="card">
+                     <img src="..." class="card-img-top" alt="...">
+                     <div class="card-body">
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="card-text">Complete Course -Internet of Things </p>
+                     </div>
+                     <div class="card-footer">
+                            <small class="text-muted"><em><s>Rs.3700s</s></em> &nbsp<b> Rs.
+                                          1500</b></small>
+                     </div>
+              </div>
+              <div class="card">
+                     <img src="..." class="card-img-top" alt="...">
+                     <div class="card-body">
+                            <h5 class="card-title">BlockChain Technology</h5>
+                            <p class="card-text">Complete Course -BlockChain Tehnology
+                            </p>
+                     </div>
+                     <div class="card-footer">
+                            <small class="text-muted"><em><s>Rs.5400s</s></em> &nbsp<b> Rs.
+                                          2500</b></small>
+                     </div>
+              </div>
+       </div>
