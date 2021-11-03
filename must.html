@@ -1,2 +1,511 @@
-<h1> Must Do Coding Problems</h1>
-<p>These are the Coding Problems Which You may Encounter in Your coding rounds of top companies </p>
+<!doctype html>
+<html lang="en">
+
+<head>
+       <link rel="icon" href="U.png" type="image/x-icon">
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="uCode Blog" content="A tech blog from uCode Inc.">
+
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+              crossorigin="anonymous">
+
+       <title>u&iCode - Nirvana for Coders</title>
+       <style>
+              div p {
+                     font-size: 17px;
+                     ;
+              }
+
+              .container a {
+                     text-decoration: none;
+              }
+              h4{
+                     margin: 20px;;
+              }
+              .get
+              {
+                     border: 2px solid black;
+                     margin-top: 40px;
+                     padding-left: 50px;
+                     padding-top: 20px;
+                     background-color: rgb(220, 241, 143);
+                     
+                   
+              }
+              .must
+              {
+                     margin-top: 30px;
+              }
+              body
+              {
+                     background-color: rgb(206, 241, 241);
+              }
+       </style>
+</head>
+
+<body>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="index.html">u&iCode</a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="nav-link  " href="about.html">About</a>
+                                   </li>
+
+                                   <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                 data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Topics
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                 <li><a class="dropdown-item" href="#">Web Developement</a></li>
+                                                 <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+                                                 <li><a class="dropdown-item" href="#">Internet Of things</a></li>
+                                                 <li><a class="dropdown-item" href="#">Graphic Designing &
+                                                               Animations</a></li>
+                                                 <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+                                                 <li><a class="dropdown-item" href="#">Competitive Programming</a></li>
+                                                 <li><a class="dropdown-item" href="#">Augmented Reality</a></li>
+                                                 <li><a class="dropdown-item" href="#">Virtual Reality</a></li>
+                                                 <li>
+                                                        <hr class="dropdown-divider">
+                                                 </li>
+                                                 <li><a class="dropdown-item" href="#">Report Bug</a></li>
+                                                 <li><a class="dropdown-item" href="#">Support</a></li>
+                                          </ul>
+                                   </li>
+
+
+
+                                   <li class="nav-item">
+                                          <a class="nav-link " href="">Blogs</a>
+                                   </li>
+                                   <li class="nav-item">
+
+                                   <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                 data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Resources
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                 <li><a class="dropdown-item" href="cheatsheet.html">Cheatsheet</a></li>
+                                                 <li><a class="dropdown-item" href="#">Must Do Problems</a></li>
+                                                 <li>
+                                                        <hr class="dropdown-divider">
+                                                 </li>
+                                                 <li><a class="dropdown-item" href="#">Ask The Expert</a></li>
+                                          </ul>
+                                   </li>
+
+
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="nav-link" href="contact.html">Contact Us</a>
+                                   </li>
+                            </ul>
+
+
+
+                            <form class="d-flex">
+                                   <input class="form-control me-2" type="search" placeholder="Search"
+                                          aria-label="Search">
+                                   <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                            <div class="mx-2">
+                                   <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                                          data-bs-target="#loginModal">Login</button>
+                                   <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                                          data-bs-target="#signupModal">Signup</button>
+                            </div>
+                     </div>
+              </div>
+       </nav>
+
+       <!-- Login Modal -->
+       <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                     <div class="modal-content">
+                            <div class="modal-header">
+                                   <h5 class="modal-title" id="signupModalLabel">Login to uCode</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                   <form>
+                                          <div class="mb-3">
+                                                 <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                 <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                 <div id="emailHelp" class="form-text">We'll never share your email with
+                                                        anyone else.</div>
+                                          </div>
+                                          <div class="mb-3">
+                                                 <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                 <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                          <div class="mb-3 form-check">
+                                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                 <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Login</button>
+                                   </form>
+                            </div>
+                            <div class="modal-footer">
+                                   <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+       <!-- Sign up modal -->
+       <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                     <div class="modal-content">
+                            <div class="modal-header">
+                                   <h5 class="modal-title" id="signupModalLabel">Get an uCode Account</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                   <form>
+
+                                          <div class="mb-3">
+                                                 <div class="form-group mb-3">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" class="form-control" id="name">
+                                                 </div>
+                                                 <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                 <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                 <div id="emailHelp" class="form-text">We'll never share your email with
+                                                        anyone else.</div>
+                                          </div>
+                                          <div class="mb-3">
+                                                 <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                 <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                          <div class="mb-3">
+                                                 <label for="cexampleInputPassword1" class="form-label">Confirm
+                                                        Password</label>
+                                                 <input type="password" class="form-control"
+                                                        id="cexampleInputPassword1">
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Create Account</button>
+                                   </form>
+                            </div>
+                            <div class="modal-footer">
+                                   <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+
+
+
+       <div class="container">
+       
+                            <div class="container">
+                                   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                                   <div class="row">
+                                     <div class="col-md-8 must">
+                                          <h1> Must Do Coding Problems</h1>
+                                          <p>These are the Coding Problems Which You may Encounter in Your coding rounds <br> of top
+                                                 companies like Amazone Adobe Facebook Google....<br>
+                                                 You Must Practice Them in Your Favourite Programming language <br>
+                                                 All The Best CODERS.. </p>
+                                     </div>
+                                     <div class="col-3 col-md-2 get">
+                                           <h3> Get Help</h3>
+                                           <div>
+                                                 <a href="cheatsheet.html"> Cheatsheets</a>
+                                           </div>
+                                           <div>
+                                                 <a href="Courses.html">Courses</a>
+                                           </div>
+                                           <div>
+                                                 <a href="experts.html">Ask Experts</a>
+                                           </div>
+                                     </div>
+                                   </div>
+              </div>
+              <h4>Arrays</h4>
+              <ul class="list-group">
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Subarray with given sum<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Kadane’s Algorithm<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Count the triplets<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            K’th smallest element<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Rearrange array alternatively<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Element with left side smaller and right side greater<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+
+                     
+              </ul>
+              <h4>Linked List</h4>
+              <ul class="list-group">
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Finding middle element in a linked list<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Rotate a Linked List<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Reverse a Linked List in groups of given size<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Intersection point in Y shaped linked lists<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Detect Loop in linked list  <br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Add two numbers represented by linked lists<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+
+                     
+              </ul>
+              <h4>Queue</h4>
+              <ul class="list-group">
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Recursively remove all adjacent duplicates<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Longest Common Prefix<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Permutations of a given string<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Implement strstr<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Reverse words in a given string<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Longest Distinct Characters in the strings<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+
+                     
+              </ul>
+              <h4>Hashing</h4>
+              <ul class="list-group">
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Recursively remove all adjacent duplicates<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Longest Common Prefix<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Permutations of a given string<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Implement strstr<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Reverse words in a given string<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Longest Distinct Characters in the strings<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+
+                     
+              </ul>
+              <h4>Strings</h4>
+              <ul class="list-group">
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Recursively remove all adjacent duplicates<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Longest Common Prefix<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Permutations of a given string<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Implement strstr<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                     </li>
+
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Reverse words in a given string<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+                     <li class="list-group-item">
+
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Longest Distinct Characters in the strings<br>
+                            <a href="compiler.html"> &nbsp &nbsp &nbsp Practice Now</a>
+
+                    
+
+                     </li>
+
+                     
+              </ul>
+       </div>
+</body>
