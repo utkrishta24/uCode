@@ -1,8 +1,8 @@
 
 .inside1 {
-    margin-top: 100px;
+     padding-top: 100px;
     font-family: 'Actor', sans-serif;
-    margin-bottom: 20px;
+   
 
 
 }
@@ -18,15 +18,16 @@
 }
 
 .inside2 {
-    margin-top: 20px;
+    padding-top: 30px;
     font-family: 'Actor', sans-serif;
 
 
 }
 
-h1 {
+.inside2 h1 {
     font-weight: bolder;
     font-size: 60px;
+    
 }
 .cardrow
 {
