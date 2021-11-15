@@ -18,9 +18,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+            <img src="U.png" alt="" width="50" height="45" class="d-inline-block align-text-top">
             <a class="navbar-brand" href="index.html">u&iCode</a>
+      
+    </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  " href="about.html">About</a>
@@ -52,42 +55,44 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
+                            <li><a class="dropdown-item" href="TechNews.html">Tech News</a></li>
                             <li><a class="dropdown-item" href="bug.html">Report Bug</a></li>
                             <li><a class="dropdown-item" href="contact.html">Support</a></li>
                         </ul>
                     </li>
 
-                    
+
 
                     <li class="nav-item">
                         <a class="nav-link " href="blogmain.html">Blogs</a>
                     </li>
                     <li class="nav-item">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="cheatsheet.html">Cheatsheet</a></li>
-                                <li><a class="dropdown-item" href="must.html">Must Do Problems</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="expert.html">Ask The Expert</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="compiler.html">Compiler</a></li>
+                            <li><a class="dropdown-item" href="cheatsheet.html">Cheatsheet</a></li>
+                            <li><a class="dropdown-item" href="must.html">Must Do Problems</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="expert.html">Ask The Expert</a></li>
+                        </ul>
+                    </li>
 
-                        
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
 
-                
-                
+
+
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -98,9 +103,9 @@
                     <button class="btn btn-outline-danger" data-bs-toggle="modal"
                         data-bs-target="#signupModal">Signup</button>
                 </div>
-             </div>
-      </div>
-</nav>
+            </div>
+        </div>
+    </nav>
 
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -174,7 +179,6 @@
             </div>
         </div>
     </div>
-
 
         <div class="container my-4">
                <h1>Ask the Expert</h1>
